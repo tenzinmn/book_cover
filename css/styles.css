@@ -1,0 +1,65 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    font-family: Arial, sans-serif;
+}
+
+/* Book Cover */
+.book-cover {
+    width: 300px;
+    height: 450px;
+    background-color: #fcd403; /* Yellow background */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #000;
+    position: relative;
+}
+
+/* Eyes */
+.eyes {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin-top: 90px; /* Eyes positioned properly */
+}
+
+.eye {
+    width: 40px;
+    height: 40px;
+    background-color: #000; /* Black color */
+    border-radius: 50%;
+}
+
+/* Smile */
+.smile {
+    width: 300px;
+    height: 150px;
+    margin-top: -100px; /* Pulled much closer to the eyes */
+}
+
+.smile text {
+    font-size: 18px;
+    font-weight: bold;
+    fill: #000; /* Black text color */
+}
+
+/* Author */
+.author {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
