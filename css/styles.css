@@ -55,11 +55,26 @@ body {
     fill: #000; /* Black text color */
 }
 
-/* Author */
+/* Author Name */
 .author {
     font-size: 1rem;
     font-weight: bold;
     color: #000;
     margin-bottom: 20px;
     text-align: center;
+    opacity: 0; /* Initially hidden */
+    animation: fadeInOut 3s ease-in-out infinite; /* Apply the animation */
+}
+
+/* Fade In/Out Animation */
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1; /* Fully visible */
+    }
+    100% {
+        opacity: 0; /* Fully hidden */
+    }
 }
